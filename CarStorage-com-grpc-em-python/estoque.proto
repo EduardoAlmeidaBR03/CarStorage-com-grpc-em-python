@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package estoque;
+
+// Importação do tipo Empty
+import "google/protobuf/empty.proto";
+
+// Definição do carro
+message Carro {
+  string id = 1;
+  string modelo = 2;
+  int32 ano = 3;
+  int32 quantidade = 4;
+}
+
+// Mensagem de resposta
+message Resposta {
+  string status = 1;
+}
+
+// Mensagem para remoção
+message RemoverRequest {
+  string id = 1;
+}
+
+// Serviço do estoque
+service Estoque {
+  rpc AdicionarCarro (Carro) returns (Resposta);
+  rpc RemoverCarro (RemoverRequest) returns (Resposta);
+  rpc ListarCarros (google.protobuf.Empty) returns (stream Carro);
+}
