@@ -25,7 +25,7 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\restoque.proto\x12\x07\x65stoque\x1a\x1bgoogle/protobuf/empty.proto\"D\n\x05\x43\x61rro\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06modelo\x18\x02 \x01(\t\x12\x0b\n\x03\x61no\x18\x03 \x01(\x05\x12\x12\n\nquantidade\x18\x04 \x01(\x05\"\x1a\n\x08Resposta\x12\x0e\n\x06status\x18\x01 \x01(\t\"\x1c\n\x0eRemoverRequest\x12\n\n\x02id\x18\x01 \x01(\t2\xb4\x01\n\x07\x45stoque\x12\x33\n\x0e\x41\x64icionarCarro\x12\x0e.estoque.Carro\x1a\x11.estoque.Resposta\x12:\n\x0cRemoverCarro\x12\x17.estoque.RemoverRequest\x1a\x11.estoque.Resposta\x12\x38\n\x0cListarCarros\x12\x16.google.protobuf.Empty\x1a\x0e.estoque.Carro0\x01\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\restoque.proto\x12\x07\x65stoque\x1a\x1bgoogle/protobuf/empty.proto\"?\n\x05\x43\x61rro\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06modelo\x18\x02 \x01(\t\x12\x0b\n\x03\x61no\x18\x03 \x01(\x05\x12\r\n\x05placa\x18\x04 \x01(\t\"\x1a\n\x08Resposta\x12\x0e\n\x06status\x18\x01 \x01(\t\"\x1c\n\x0eRemoverRequest\x12\n\n\x02id\x18\x01 \x01(\t2\xb4\x01\n\x07\x45stoque\x12\x33\n\x0e\x41\x64icionarCarro\x12\x0e.estoque.Carro\x1a\x11.estoque.Resposta\x12:\n\x0cRemoverCarro\x12\x17.estoque.RemoverRequest\x1a\x11.estoque.Resposta\x12\x38\n\x0cListarCarros\x12\x16.google.protobuf.Empty\x1a\x0e.estoque.Carro0\x01\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -33,11 +33,11 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'estoque_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_CARRO']._serialized_start=55
-  _globals['_CARRO']._serialized_end=123
-  _globals['_RESPOSTA']._serialized_start=125
-  _globals['_RESPOSTA']._serialized_end=151
-  _globals['_REMOVERREQUEST']._serialized_start=153
-  _globals['_REMOVERREQUEST']._serialized_end=181
-  _globals['_ESTOQUE']._serialized_start=184
-  _globals['_ESTOQUE']._serialized_end=364
+  _globals['_CARRO']._serialized_end=118
+  _globals['_RESPOSTA']._serialized_start=120
+  _globals['_RESPOSTA']._serialized_end=146
+  _globals['_REMOVERREQUEST']._serialized_start=148
+  _globals['_REMOVERREQUEST']._serialized_end=176
+  _globals['_ESTOQUE']._serialized_start=179
+  _globals['_ESTOQUE']._serialized_end=359
 # @@protoc_insertion_point(module_scope)

@@ -14,7 +14,7 @@ class EstoqueServicer(estoque_pb2_grpc.EstoqueServicer):
             "id": request.id,
             "modelo": request.modelo,
             "ano": request.ano,
-            "quantidade": request.quantidade
+            "placa": request.placa
         }
         self.estoque.append(carro)
         return estoque_pb2.Resposta(status="Carro adicionado com sucesso!")
@@ -29,7 +29,7 @@ class EstoqueServicer(estoque_pb2_grpc.EstoqueServicer):
                 id=carro["id"],
                 modelo=carro["modelo"],
                 ano=carro["ano"],
-                quantidade=carro["quantidade"]
+                placa=carro["placa"]
             )
 
 # Inicialização do servidor gRPC

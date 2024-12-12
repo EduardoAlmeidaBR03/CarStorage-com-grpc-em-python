@@ -10,7 +10,7 @@ message Carro {
   string id = 1;
   string modelo = 2;
   int32 ano = 3;
-  int32 quantidade = 4;
+  string placa = 4;
 }
 
 // Mensagem de resposta
